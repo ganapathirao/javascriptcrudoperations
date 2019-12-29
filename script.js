@@ -31,6 +31,7 @@ function getEmployeeData() {
   empObj["name"] = document.getElementById("fullName").value;
   empObj["salary"] = document.getElementById("salary").value;
   empObj["location"] = document.getElementById("location").value;
+  localStorage.setItem("empObj", JSON.stringify(empObj));
   return empObj;
 }
 
